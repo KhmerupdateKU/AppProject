@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge, chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OSP | Designer</title>
+        <meta name="description" content="a freelance filmmaker in Phnom penh, Cambodia">
+        <meta name="keywords" content="orkimsour, or kimsour, oks, movie in cambodia, filmmaker in cambodia">
+        <meta name="author" content="Or Kimsour">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/ionicons.min.css">
+        <link rel="stylesheet" href="css/osp--custom.css">
+        <link rel="stylesheet" href="css/site.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="container-full dashboardPage">
+                    <div class="formCreateNew">
+                        <form class="formLogin CreateNew">
+                            <div class="formLoginHeader">
+                                <div class="formGroup">
+                                    <h3>Welcome To InSTEDD!</h3>
+                                </div>
+                            </div>
+                            <div class="formLoginBody">
+                                <div class="formGroup">
+                                    <input id="inName" type="text" class="formLoginBody inputOSP" placeholder="Name">
+                                    <input id="inAge" type="text" class="formLoginBody inputOSP" placeholder="Age">
+                                    <select id="mySelect" class="formLoginBody" style="margin: 20px 0;">
+                                        <option value="BIS">BIS</option>
+                                        <option value="IT">IT</option>
+                                        <option value="CS">Computer Science</option>
+                                    </select>
+                                    <input id="inUinveristy" type="text" class="formLoginBody inputOSP" placeholder="University">
+                                </div>
+                            </div>
+                            <div class="formLoginFooter">
+                                <div class="formGroup depth-clearfix">
+                                    <div class="toRight">
+                                        <button onclick="myFunction()">Save</button> 
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </header>
+        <div id="wrapper">
+            <footer class="clearfix">
+                <p>&copy; 2015, Or Kimsour</p>
+            </footer>
+        </div>
+        <script>
+            var pName = document.getElementById('inName');
+            var pAge = document.getElementById('inAge');
+            var x = document.getElementById("mySelect").selectedIndex;
+            var y = document.getElementById("mySelect").options;
+            var pUniversity = document.getElementById('inUinveristy');
+            function myFunction() {
+                alert(
+                    pName.value + " | " +
+                    pAge.value + " | " +
+                    y[x].text + " | " +
+                    pUniversity.value
+                    );
+            }
+        </script>
+    </body>
+
+</html>
